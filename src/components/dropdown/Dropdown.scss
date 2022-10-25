@@ -1,0 +1,115 @@
+.dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    background: #FF6060;
+    border-radius: 10px;
+    cursor: pointer;
+    &__name{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        padding-left: 1rem;
+    }
+    &__icon{
+        color: white;
+        margin-right: 1rem;
+    }
+    &__open{
+        transform: rotate(180deg);
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        background: #F7F7F7;
+        border-radius: 10px;
+        padding: 1rem 0 1rem 0;
+    }
+    &__elementName{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FF6060;
+        list-style-type: none;
+        padding: .5rem 0 1rem 1rem;
+    }
+    &__content{
+        background: #F7F7F7;
+        border-radius: 5px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color:#FF6060;
+        margin: 1rem;
+    }
+}
+
+/*.equipements_description{
+    width: 582px;
+}*/
+
+.about{
+    width: 1023px;
+    margin: auto;
+}
+
+.closed{
+    display: none;
+}
+
+.open{
+    display: block;
+}
+
+.chevron_closed{
+    transform: rotate(0deg);
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1439px){
+    .equipements_description .about{
+        max-width: 582px;
+        min-width:330px;
+    }
+    .about{
+        max-width: 1023px;
+        min-width:726px;
+        width:auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .dropdown{
+        //max-width: 582px;
+        //min-width: 100px;
+        width: auto;
+    }
+    .about{
+        max-width: 582px;
+        min-width: 100px;
+        width: auto;
+        margin: auto;
+    }
+    /*.dropdown_wrap{
+        margin: 1rem;
+    }*/
+}
+
+/*
+@media (min-width:1201px){
+    .dropdown_wrap{
+        width: 582px;
+    }
+}*/
+
+.dropdown_wrap{
+    width: 100%;
+}

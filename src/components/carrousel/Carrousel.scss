@@ -1,0 +1,135 @@
+.carrousel{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    max-width: 1240px;
+    &__image{
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+        display: block;
+        margin: auto;
+    }
+    &__chevronLeft{
+        left: 30px;
+        font-size: 48px;
+    }
+    &__chevronRight{
+        right: 30px;
+        font-size: 48px;
+    }
+    &__index{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        color: white;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+    }
+}
+
+.chevron{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (min-width:1440px){
+    .carrousel{
+        &__image{
+            width:1240px;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1439px){
+    .carrousel{
+        &__image{
+            max-width:1240px;
+            min-width: 728px;
+            max-height: 415px;
+            min-height: 255px;
+        }
+    }
+    .about_image{
+        display: flex;
+        margin: auto;
+        width: 90%;
+        height: 223px;
+        object-fit: cover;
+        border-radius: 10px;
+        max-width: 1240px;
+    }
+}
+
+@media (max-width:767px){
+    .carrousel{
+        &__index{
+            display: none;
+        }
+        &__image{
+            border-radius: 10px;
+        }
+    }
+} 
+
+@media (min-width:320px) and (max-width:767px){
+    .carrousel{
+        max-width:727px;
+        min-width: 280px;
+        &__image{
+            width: 100%;
+        } 
+    }
+    .chevron{
+        font-size: 24px;
+    }
+    .about_image{
+        display: flex;
+        margin: 2rem auto;
+        width: 90%;
+        height: 223px;
+        object-fit: none;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:319px){
+    .carrousel{
+        max-width:319px;
+        &__image{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .chevron{
+        font-size: 24px;
+    }
+    .about_image{
+        max-width: 200px;
+        height: 124px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin: auto;
+    }
+}
+
+@media(min-width:1440px){
+    .about_image{
+        display: flex;
+        margin: auto;
+        margin-top: 2rem;
+        border-radius: 25px;
+    }
+}
+
+.about_image{
+    display: flex;
+}
+
+.none{display: none;}

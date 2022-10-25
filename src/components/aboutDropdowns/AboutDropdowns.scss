@@ -1,0 +1,13 @@
+.aboutDropdowns{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+@media (max-width:768px) {
+    .aboutDropdowns{
+        row-gap: 1rem;
+    }
+}
