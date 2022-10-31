@@ -14,7 +14,10 @@
     }else if(element==='house'){
         document.getElementById('home').classList.add('house');
         document.getElementById('about').classList.remove('house');
-        document.getElementById('home').classList.remove('underline')
+        document.getElementById('home').classList.remove('underline');
+        document.getElementById('about').classList.remove('underline');
+    }else {
+        document.getElementById('home').classList.remove('underline');
         document.getElementById('about').classList.remove('underline');
     }
 }

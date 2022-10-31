@@ -70,6 +70,7 @@
         display: flex;
         position: relative;
         object-fit: none;
+        filter: brightness(70%);
     }
 
     &__text{

@@ -15,7 +15,7 @@ import Error404 from '../Error404/Error404'
 const House= () => {
     window.scrollTo(0,0)
     let {id} = useParams();
-    const house= data.find(house=>house.id===id)
+    const house = data.find(house=>house.id===id)
     document.title = !!house ? house.title : "invalid";
     if(!!house === false){
         return <Error404 />

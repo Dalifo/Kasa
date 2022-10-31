@@ -49,10 +49,6 @@
     }
 }
 
-/*.equipements_description{
-    width: 582px;
-}*/
-
 .about{
     width: 1023px;
     margin: auto;
@@ -71,8 +67,6 @@
 }
 
 
-
-
 @media (min-width:768px) and (max-width:1439px){
     .equipements_description .about{
         max-width: 582px;
@@ -88,8 +82,6 @@
 
 @media (max-width: 768px){
     .dropdown{
-        //max-width: 582px;
-        //min-width: 100px;
         width: auto;
     }
     .about{
@@ -98,17 +90,7 @@
         width: auto;
         margin: auto;
     }
-    /*.dropdown_wrap{
-        margin: 1rem;
-    }*/
 }
-
-/*
-@media (min-width:1201px){
-    .dropdown_wrap{
-        width: 582px;
-    }
-}*/
 
 .dropdown_wrap{
     width: 100%;
